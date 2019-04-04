@@ -40,7 +40,7 @@ booksArray = ()=> {
         return (
           <Container>
                 <Row>
-                    <Col size="md-6">
+                    <Col size="md-12">
                         <form>
                             <input type ="text" name="search" onChange={this.textInput} />
                             <button type ="submit" onClick={this.submitSearch}>Search</button>
@@ -48,7 +48,7 @@ booksArray = ()=> {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="md-6">
+                    <Col size="md-12">
                 {this.state.books.length ? (
                     <List>
                 {this.state.books.map((book,i )=> (
